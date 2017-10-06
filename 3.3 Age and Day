@@ -7,6 +7,7 @@
  **/
  
 import java.util.Scanner;
+package userInfo;
 
 public class AgeDay
 {
@@ -15,74 +16,86 @@ public class AgeDay
         Scanner keyboard = new Scanner(System.in);
         
         int age;
+        String day;
+        String sun = "Sunday";
+        String mon = "Monday";
+        String tues = "Tuesday";
+        String wed = "Wednesday";
+        String thurs = "Thursday";
+        String fri = "Friday";
+        String sat = "Saturday";
         
         System.out.println("Enter your age: ");
         age = keyboard.nextInt();
         
-        System.out.println("Enter the full name of the day it is today: ");
-        String day = keyboard.nextLine();
+        System.out.print("Enter the full name of the day it is today: ");
+        String day = userInput.next();
+        
+        System.out.println("Check1");
         
         if (age <= 17)
         {
-            if (day == "Sunday")
+            if (day.equals(sun);
             {
                 System.out.println("Celebrate!");
             }//End inner if #1
-            if (day == "Monday")
+            if (day.equals(mon));
             {
                 System.out.println("It is a school day.");
             }//End inner if #2
-            if (day == "Tuesday")
+            if (day.equals(tues));
             {
                 System.out.println("It is a school day.");
             }//End inner if #3
-            if (day == "Wednesday")
+            if (day.equals(wed));
             {
                 System.out.println("It is a school day.");
             }//End inner if #4
-            if (day == "Thursday")
+            if (day.equals(thurs));
             {
                 System.out.println("It is a school day.");
             }//End inner if #5
-            if (day == "Friday")
+            if (day.equals(fri));
             {
                 System.out.println("It is a school day.");
             }//End inner if #6
-            if (day == "Saturday")
+            if (day.equals(sat));
             {
                 System.out.println("Celebrate!");
             }//End inner if #7
         }//End if
         else
         {
-             if (day == "Sunday")
+             if (day.equals(sun));
             {
                 System.out.println("Celebrate!");
             }//End inner if #1
-            if (day == "Monday")
+            if (day.equals(mon));
             {
                 System.out.println("It is a work day.");
             }//End inner if #2
-            if (day == "Tuesday")
+            if (day.equals(tues));
             {
                 System.out.println("It is a work day.");
             }//End inner if #3
-            if (day == "Wednesday")
+            if (day.equals(wed));
             {
                 System.out.println("It is a work day.");
             }//End inner if #4
-            if (day == "Thursday")
+            if (day.equals(thurs));
             {
                 System.out.println("It is a work day.");
             }//End inner if #5
-            if (day == "Friday")
+            if (day.equals(fri));
             {
                 System.out.println("It is a work day.");
             }//End inner if #6
-            if (day == "Saturday")
+            if (day.equals(sat));
             {
                 System.out.println("Celebrate!");
             }//End inner if #7
         }//End else
+        
+        System.out.println("Check 2");
     }//End method main
 }//End class AgeDay
