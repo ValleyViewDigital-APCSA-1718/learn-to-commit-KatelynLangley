@@ -1,0 +1,63 @@
+
+/**
+ * Katelyn Langley
+ * Period 5/ APCSA
+ * Rioux
+ * 09/29/17
+ * 3.3 Age and Day
+ **/
+ 
+import java.util.Scanner;
+
+public class AgeDay
+{
+    public static void main (String[]args)
+    {
+        System.out.println("Check 1");
+        Scanner keyboard = new Scanner(System.in);
+        
+        int age;
+        String sun = "Sunday";
+        String mon = "Monday";
+        String tues = "Tuesday";
+        String wed = "Wednesday";
+        String thurs = "Thursday";
+        String fri = "Friday";
+        String sat = "Saturday";
+        
+        System.out.println("Check 2");
+       
+        System.out.println("Enter your age: ");
+        age = keyboard.nextInt();
+        
+        System.out.print("Enter the full name of the day it is today: ");
+        String day = keyboard.next();
+        
+        System.out.println("Check 3");
+        
+        if (age <= 17)
+        {
+            if (day.equals(sun)||day.equals(sat))
+            {
+                System.out.println("Celebrate!");
+            }//End inner if #1
+            if (day.equals(mon)||day.equals(tues)||day.equals(wed)||day.equals(thurs)||day.equals(fri))
+            {
+                System.out.println("It is a school day.");
+            }//End inner if #2
+            break;
+        }//End #1 while
+        else
+        {
+             if (day.equals(sun)||day.equals(sat))
+            {
+                System.out.println("Celebrate!");
+            }//End inner if #1
+            if (day.equals(mon)||day.equals(tues)||day.equals(wed)||day.equals(thurs)||day.equals(fri))
+            {
+                System.out.println("It is a work day.");
+            break;
+        }//End else
+        System.out.println("Check 4");
+    }//End method main
+}//End class AgeDay
