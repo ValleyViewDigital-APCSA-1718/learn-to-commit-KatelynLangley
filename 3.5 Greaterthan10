@@ -1,0 +1,33 @@
+/**
+ * Katelyn Langley
+ * Period 5/APCSA
+ * 10/16/17
+ * Rioux
+ * 3.5 While Loop
+ **/
+ 
+import java.util.Scanner;
+
+public class Greaterthan10
+{
+    public static void main (String[]args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+        
+        int num;
+        int num2;
+        
+        System.out.println("Please enter a number greater than 10: ");
+        num = keyboard.nextInt();
+        
+        while (num <= 10)
+        {
+            System.out.println("Your number is not valid, please enter a new number: ");
+            num2 = keyboard.nextInt();
+            break;
+        }//End while loop
+        
+        System.out.println("Your number is valid, thank you.");
+        
+    }//End method main
+}//End class Greaterthan10
