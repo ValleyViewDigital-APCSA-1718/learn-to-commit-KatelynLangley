@@ -1,10 +1,9 @@
-
 /**
  * Katelyn Langley
  * Period 5/ APCSA
  * Rioux
- * 09/29/17
- * 3.3 Age and Day
+ * 10/16/17
+ * 3.4 Discount
  **/
  
 import java.util.Scanner;
@@ -13,7 +12,6 @@ public class Discount
 {
     public static void main (String[]args)
     {
-        System.out.println("Check 1");
         Scanner keyboard = new Scanner(System.in);
         
         double price;
@@ -25,15 +23,11 @@ public class Discount
         String fri = "Friday";
         String sat = "Saturday";
         
-        System.out.println("Check 2");
-        
         System.out.println("Enter the full name of the day it is today: ");
         String day = keyboard.next();
         
         System.out.println("Enter the total price: ");
-        double price = keyboard.nextDouble();
-        
-        System.out.println("Check 3");
+        price = keyboard.nextDouble();
         
         if (day.equals(mon)||day.equals(thurs)||day.equals(sat)||day.equals(sun))
         {
@@ -52,22 +46,28 @@ public class Discount
                     System.out.println("Sorry, you are not eligable for a discount.");
                 }//End inner inner else #1
             }//End inner if #1
-            if (day.equals(wed)
+            if (day.equals(wed))
             {
                 if (price >= 40.00)
                 {
-                    System.out.println("Congrats! You are eligable for a discount!")
+                    System.out.println("Congrats! You are eligable for a discount!");
                 }//End inner inner if #2
                 else
                 {
-                    System.out.println("Sorry, you are not eligable for a discount.")
+                    System.out.println("Sorry, you are not eligable for a discount.");
                 }//End inner inner else #2
             }//End inner if #2
             if (day.equals(fri))
             {
-                System.out.println("")
-            }
+                if ((price%2)==0)
+                {
+                    System.out.println("Congrats! You are eligable for a discount!");
+                }//End inner inner if #3
+                else
+                {
+                    System.out.println("Sorry, you are not eligable for a discount.");
+                }//End inner inner else #3
+            }//End inner if #3
         }//End else
-        System.out.println("Check 4");
     }//End method main
-}//End class AgeDay
+}//End class Discount
