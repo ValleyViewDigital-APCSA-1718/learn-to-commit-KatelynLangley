@@ -25,9 +25,10 @@ public class Multiples
         
         System.out.println("The multiples of "+ value + " between " + value + " and " + limit + " (inclusive) are: ");
         
+        mult = value;
+        
         while (mult <= limit)
         {
-            mult = value;
             mult += value;
             
             System.out.print(mult + "\t");
@@ -37,7 +38,6 @@ public class Multiples
             {
                 System.out.println();
             }//End if
-            break;
         }//End while
     }//End method main
 }//End class Multiples
