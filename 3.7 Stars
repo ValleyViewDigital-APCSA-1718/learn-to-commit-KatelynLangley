@@ -1,0 +1,15 @@
+/**
+ * Katelyn Langley
+ * Period 5/APCSA
+ * Rioux
+ * 10/24/17
+ * Stars
+ **/
+ 
+public class Stars
+{
+    public static void main (String[]args)
+    {
+        
+    }//End method main
+}//End class Stars
