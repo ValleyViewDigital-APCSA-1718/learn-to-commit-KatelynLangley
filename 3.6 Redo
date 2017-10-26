@@ -29,9 +29,9 @@ public class Multiples
         
         while (mult <= limit)
         {
-            mult += value;
             
             System.out.print(mult + "\t");
+            mult += value;
             count++;
             
             if (count % PER_LINE == 0)
